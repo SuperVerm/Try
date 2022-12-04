@@ -21,6 +21,7 @@ int main()
         _u = u;
         _i = i;
     }
+    
     cout << sum << endl;
 
     system("pause");
