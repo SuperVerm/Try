@@ -21,7 +21,6 @@ int main()
     {
         for(int j = 0; j <= i; j++)
         {
-            
             dp[i][j] = max(dp[i-1][j-1], dp[i-1][j]) + a[i][j];
         }
     }
@@ -36,9 +35,12 @@ int main()
     //     cout << endl;
     // }
 
-    for(int i = 0; i < n; i++)
+    if(n%2 == 0)
     {
-        ans = max(ans, dp[n-1][i]);
+        ans = max(dp[n-1][n/2 - 1], dp[n-1][n/2]);
+    }else
+    {
+        ans = dp[n-1][n/2];
     }
 
     cout << ans << endl;
