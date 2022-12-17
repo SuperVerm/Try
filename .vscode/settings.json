@@ -1,6 +1,8 @@
 {
     "git.useEditorAsCommitInput": false,
     "files.associations": {
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "utility": "cpp",
+        "vector": "cpp"
     }
 }
